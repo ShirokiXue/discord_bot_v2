@@ -20,7 +20,7 @@ class TaskCog(commands.Cog):
         await self.bot.wait_until_ready()
 
         hour = datetime.now().strftime("%H")
-        if hour == '10':
+        if hour == '01':
             self.bot.logger.info("'pixiv_follow_task' start")
             pixiv_downloader = PixivDownloader()
             target = self.bot.get_channel(self.bot.json_loader.get(
